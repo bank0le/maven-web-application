@@ -61,7 +61,7 @@ Founder, Training With Banks
 <hr>
 <hr>
 <p align=center>Landmark Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2019 by <a href="http://mylandmark.tech/">Landmark Technologies</a> </small></p>
+<p align=center><small>Copyrights 2026 by <a href="http://mylandmark.tech/">TWB.com</a> </small></p>
 
 </body>
 </html>
