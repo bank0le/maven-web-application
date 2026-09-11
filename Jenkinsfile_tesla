@@ -1,0 +1,41 @@
+node{
+    def mavenHome = tool name: 'Maven 3.9.9'
+    stage('1cloneCode'){
+      git "https://github.com/bank0le/maven-web-application"
+    }
+    stage('2Test&Build'){
+        sh "${mavenHome}/bin/mvn clean package"
+    }
+stage('3codeQuality') {
+    withCredentials([string(credentialsId: 'sonar-token', variable: 'SONAR_TOKEN')]) {
+        sh """
+        ${mavenHome}/bin/mvn sonar:sonar \
+        -Dsonar.host.url=http://172.31.68.192:9000 \
+        -Dsonar.token=\$SONAR_TOKEN
+        """
+    }
+}
+    stage('4uploadArtifacts'){
+        sh "${mavenHome}/bin/mvn deploy"
+    }
+    stage('5deploy2UAT'){
+        echo "Deploy to UAT"
+        deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'TomcatCred', path: '', url: 'http://100.54.20.32:8080')], contextPath: null, war: 'target/*war'
+    }
+    stage('6approvalGate'){
+         echo "ready for review" 
+        timeout(time:5, unit:'DAYS'){
+            input message: "Application ready for deployment, Please review and approve"
+        }
+    }
+    stage('7deploy2Prod'){
+        echo "Deploy to Production"
+        deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'TomcatCred', path: '', url: 'http://100.54.20.32:8080')], contextPath: null, war: 'target/*war'
+    }
+    stage('8emailVerification'){
+        emailext body: '''Hi All
+
+Check Build Status
+Bankole J''', recipientProviders: [developers(), upstreamDevelopers(), contributor()], subject: 'Build Status', to: 'getbankole@gmail.com'
+    }
+}
