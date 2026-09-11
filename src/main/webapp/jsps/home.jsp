@@ -12,7 +12,7 @@
 <h1 align="center">TWB  --> A 121 Training Program</h1>
 <h1 align="center"> Welcome to Training With Banks!
 
-Training With Banks is a player-development program focused on helping young athletes improve their technical ability, confidence, discipline, fitness, and overall understanding of the game.
+TWB is a player-development program focused on helping young athletes improve their technical ability, confidence, discipline, fitness, and overall understanding of the game.
 
 Our training approach is designed for players of different ages and experience levels. Whether you are just getting started or already competing at a high level, our goal is to challenge you, develop you, and help you become a better footballer.
 
@@ -39,7 +39,8 @@ Congratulations and welcome to the TWB family!
 Thank you for trusting Training With Banks with your development.
 
 — Coach Banks
-Founder, Training With Banks
+
+-- Founder, Training With Banks
 </h1>
 <hr>
 <div style="text-align: center;">
