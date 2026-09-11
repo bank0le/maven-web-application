@@ -29,6 +29,7 @@ stage('3codeQuality') {
         }
     }
     stage('7deploy2Prod'){
+        sh "sleep 50"
         echo "Deploy to Production"
         deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'TomcatCred', path: '', url: 'http://100.54.20.32:8080')], contextPath: null, war: 'target/*war'
     }
