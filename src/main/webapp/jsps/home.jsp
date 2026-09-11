@@ -9,15 +9,38 @@
 </head>
 </head>
 <body>
-<h1 align="center">Landmark Technology  --> A Metropolitan University Company</h1>
-<h1 align="center"> Welcome to Training With Banks .......We have a demo on DevOps E Degree with Linux and AWS  on Saturday August 5, 2020 at 4pm EST for our new batch. 
-	Landmark Technology is a an ideal online training  platform for DevOps and Cloud Infrastructures. 
-	Our anointed and extensive teaching approach takes our students with or without any IT Background to become Subject Matter Expect in IT, and DevOps automation.
-	Over 80% of our students are hired within 6 months of joining Landmark Technology.
-	Congratulations!! Welcome to Landmark Technology!! Welcome to your ENVIABLE IT CAREER.
-	We offer interview preparations and job assitance.
-	The King is in our midst. His name is JESUS. What a wonderful it is. HE IS OUR SUCCESS ACCESS KEY.
-	Thanks for being an ambassador of Landmark Technology. President</h1>
+<h1 align="center">TWB  --> A 121 Training Program</h1>
+<h1 align="center"> Welcome to Training With Banks!
+
+Training With Banks is a player-development program focused on helping young athletes improve their technical ability, confidence, discipline, fitness, and overall understanding of the game.
+
+Our training approach is designed for players of different ages and experience levels. Whether you are just getting started or already competing at a high level, our goal is to challenge you, develop you, and help you become a better footballer.
+
+At Training With Banks, we believe that improvement comes through preparation, consistency, hard work, and attention to detail.
+
+Our sessions focus on:
+
+* Technical development
+* Ball mastery
+* Finishing and attacking
+* Speed, agility, and fitness
+* Game understanding
+* Confidence and mentality
+* Competitive training
+
+We are committed to creating a positive, professional, and demanding environment where every player has the opportunity to grow.
+
+Congratulations and welcome to the TWB family!
+
+**Train Different. Get Better.**
+
+**Separation by Preparation.**
+
+Thank you for trusting Training With Banks with your development.
+
+— Coach Banks
+Founder, Training With Banks
+</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
