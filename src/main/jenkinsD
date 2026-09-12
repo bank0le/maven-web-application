@@ -43,6 +43,7 @@ pipeline {
                 sh "mvn deploy"
             }
         }
+/*
         stage('8deploy2prod') {
             steps {
                 deploy adapters: [
@@ -73,5 +74,6 @@ Build URL: ${env.BUILD_URL}
             to: 'getbankole@gmail.com'
         )
     }
+*/
 }
 }
