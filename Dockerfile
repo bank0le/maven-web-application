@@ -1,3 +1,3 @@
-FROM tomcat:8.0.20-jre8
-# Dummy text to test 
-COPY target/maven-web-application*.war /usr/local/tomcat/webapps/maven-web-application.war
+FROM tomcat:9-jre8-temurin
+
+COPY target/*.war /usr/local/tomcat/webapps/maven-web-application.war
